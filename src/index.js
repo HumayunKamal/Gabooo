@@ -3,29 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-//////////////////////
-///// Custom Theme
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter } from "react-router-dom";
-
-let mainTheme = createTheme({
-  palette: {
-    primary: {
-      main: "#292929",
-    },
-    secondary: {
-      main: "#d3995f",
-    },
-  },
-});
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={mainTheme}>
-        <App />
-      </ThemeProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

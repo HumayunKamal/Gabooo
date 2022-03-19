@@ -1,5 +1,4 @@
-import { Link } from "@mui/material";
-
+import { Link } from "react-router-dom";
 // Style
 import style from "./TopNav.module.scss";
 
@@ -30,10 +29,10 @@ const TopNav = () => {
             />
           </svg>
         </a>
-        <Link href="/login" color="white" underline="none">
+        <Link to="/login" color="white" underline="none">
           Login
         </Link>
-        <Link href="/register" color="white" underline="none">
+        <Link to="/register" color="white" underline="none">
           Register
         </Link>
       </div>

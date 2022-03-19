@@ -49,7 +49,7 @@ const Footer = () => {
           <h5 className={classes.copyright}>
             &copy; {copyDate} - {""}
             <a
-              href="https://www.graphberry.com/"
+              href="https://www.graphberry.com/item/gabooo-free-fashion-ecommerce-theme"
               target="_blank"
               rel="noReferrer"
               className={classes.creditName}

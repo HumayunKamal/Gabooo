@@ -1,13 +1,13 @@
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import classes from "./Navbar.module.scss";
 const Navbar = (props) => {
   return (
     <div className={classes.navbar}>
-      <Link href="/women">Women</Link>
-      <Link href="/men">Men</Link>
-      <Link href="/children">Childen</Link>
-      <Link href="/collection">Collection</Link>
-      <Link href="/" className={classes.logo}>
+      <Link to="/women">Women</Link>
+      <Link to="/men">Men</Link>
+      <Link to="/children">Childen</Link>
+      <Link to="/collection">Collection</Link>
+      <Link to="/" className={classes.logo}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="117"
@@ -24,10 +24,10 @@ const Navbar = (props) => {
           </g>
         </svg>
       </Link>
-      <Link href="/spring">Spring</Link>
-      <Link href="/summar">Summar</Link>
-      <Link href="/fall">Fall</Link>
-      <Link href="/winter">Winter</Link>
+      <Link to="/spring">Spring</Link>
+      <Link to="/summar">Summar</Link>
+      <Link to="/fall">Fall</Link>
+      <Link to="/winter">Winter</Link>
     </div>
   );
 };
