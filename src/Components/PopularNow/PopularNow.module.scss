@@ -1,0 +1,69 @@
+@import "../../scss/var";
+.popularNow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  padding: 0 8vw;
+
+  h2 {
+    color: $secondaryColor;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  .filterBtn {
+    margin-bottom: 30px;
+    button {
+      border: none;
+      outline: none;
+      color: $primaryText;
+      margin-right: 5px;
+      background: transparent;
+
+      &:hover,
+      &.active {
+        cursor: pointer;
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .popularNow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    padding: 0 8vw;
+
+    h2 {
+      color: $secondaryColor;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .filterBtn {
+      margin-bottom: 30px;
+      button {
+        border: none;
+        outline: none;
+        color: $primaryText;
+        margin-right: 5px;
+        background: transparent;
+        &:hover,
+        &.active {
+          color: $secondaryColor;
+        }
+      }
+    }
+    .card {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}

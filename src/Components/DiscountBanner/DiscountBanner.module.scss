@@ -1,0 +1,14 @@
+@import "../../scss/var";
+.discountBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: $primaryColor;
+
+  h2 {
+    margin-bottom: 0px;
+  }
+  
+}

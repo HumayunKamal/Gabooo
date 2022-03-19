@@ -1,0 +1,41 @@
+$backGroundColor: #f9f9f9;
+$primaryColor: #292929;
+$secondaryColor: #d3995f;
+.main {
+  background-color: $primaryColor;
+  color: $backGroundColor;
+  padding: 0 8vw;
+  font-size: 12px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .inline {
+    display: flex;
+    a {
+      margin-right: 10px;
+    }
+  }
+  .inlineSocial {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      margin-right: 10px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 8px 0;
+  }
+  .inline {
+    margin-bottom: 4px;
+  }
+  .inlineSocial {
+    margin-bottom: 4px;
+  }
+}

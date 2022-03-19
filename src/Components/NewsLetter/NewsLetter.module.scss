@@ -1,0 +1,77 @@
+@import "../../scss/var";
+.newsLetter {
+  background-color: $secondaryText;
+  height: 150px;
+  padding: 20px 8vw;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    :not(:first-child) {
+      margin-top: 4px;
+    }
+    label {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    input {
+      border: 1px solid $secondaryColor;
+      background-color: transparent;
+      outline: none;
+      padding: 0px 10px;
+      height: 45px;
+    }
+    button {
+      height: 45px;
+      border: none;
+      background-color: $secondaryColor;
+      color: $secondaryText;
+      outline: none;
+
+      &:hover {
+        border: 1px solid $secondaryColor;
+        background-color: transparent;
+        color: $primaryText;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .newsLetter {
+    background-color: $secondaryText;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8vw;
+
+    .form {
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+
+      :not(:first-child) {
+        margin-top: 0px;
+      }
+      label {
+        margin-bottom: 0px;
+        margin-right: 2rem;
+      }
+      input {
+        width: 400px;
+        margin-right: 2rem;
+      }
+      button {
+        height: 47px;
+        width: 170px;
+      }
+    }
+  }
+}
